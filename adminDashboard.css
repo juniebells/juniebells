@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+::after,
+::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    font-family: Poppins;
+}
+
+a{
+    text-decoration: none;
+    color: #b39f34;
+}
+
+h1{
+    color: #b39f34;
+}
+
+li{
+    list-style: none;
+}
+
+.wrapper{
+    display: flex;
+}
+
+.main-content {
+    overflow-y: auto;
+    height: 100vh;
+    width: 100%;
+    background-color: #fff; /* optional */
+    padding: 20px;
+}
+
+
+.main{
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    transition: all 0.35s ease-in-out;
+    background-color: black;
+}
+.main h1{
+    font-size: 3rem;
+}
+#sidebar{
+    width: 70px;
+    min-width: 70px;
+    height: 100vh;
+    z-index: 1000;
+    transition: all .25s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    background-color: #496b34;
+}
+.main-content {
+      overflow-y: auto;
+      height: 100vh;
+    }
+.sidebar{
+    overflow-y: auto;
+    width: 300px;
+    height: 100vh;
+    background-color: #57853c;
+    color: white;
+}
+.sidebar .nav-link {
+    color: white;
+}
+.sidebar img{
+    height:3.5rem;
+    width:3.5rem;
+}
+.title{
+    background-color: #57853c;
+    padding: 1.5rem;
+    border-radius: 10px;
+    color: white;
+}
+#sidebar.expand{
+    width: 200px;
+    min-width: 240px;
+}
+.modal-dialog{
+    width: 500px;
+}
+.modal-header {
+    background-color: #06402B;
+    color: white;
+}
+.modal-title {
+    font-weight: bold;
+}
+
+img.modal-logo{
+    height:3.5rem;
+    width:3.5rem;
+}
+#toggle-btn {
+    background-color: transparent;
+    cursor: pointer;
+    border: 0;
+    padding: 1rem 1.5rem;
+}
+
+#toggle-btn i {
+    color: #b39f34;
+    font-size: 1.5rem;
+}
+
+.sidebar-logo{
+    margin: auto 0;
+}
+
+.sidebar-logo a{
+    font-size: 1.15rem;
+    font-weight: 600;
+}
+
+#sidebar:not(.expand) .sidebar-logo,
+#sidebar:not(.expand) a.sidebar-link span {
+    display: none;
+}
+
+.sidebar-nav{
+    padding: 2rem 0;
+    flex: 1 1 auto;
+}
+
+a.sidebar-link{
+    padding: .600rem 1.6rem;
+    color: white;
+    display: block;
+    font-size: 1rem;
+    white-space: nowrap;
+    border-left: 3px solid transparent;
+}
+a.sidebar-link:hover{
+    color: white;
+}
+a.sidebar-link i{
+    font-size: 1.1rem;
+    margin-right: .7rem;
+}
+
+a.sidebar-link:hover{
+    background-color: rgb(179, 159, 52, .3);
+    border-left: 3px solid #b39f34;
+}
+
+.search-container {
+    position: relative;
+}
+
+.search-input {
+    height: 50px;
+    border-radius: 30px;
+    padding-left: 35px;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-icon {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: #888;
+}
+
+.table-tr{
+    background-color: #b39f34;
+}
+
+.card{
+    border: none;
+    padding-bottom: 0;
+}
+
+.modal-header span{
+    color: #b39f34;
+}
